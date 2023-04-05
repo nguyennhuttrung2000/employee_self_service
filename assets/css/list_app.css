@@ -18,6 +18,7 @@
 
 .list_item img {
   display: block;
+  width: 300px;
 }
 
 .list_item span {
@@ -28,7 +29,49 @@
   font-weight: bold;
 }
 
-.list_item img {
-  width: 300px;
+
+
+@media screen and (max-width: 1199px) {
+  .list_item img {
+    width: 150px;
+  }
+  
 }
 
+@media screen and (max-width: 991px) {
+  .list_item img {
+    width: 110px
+  }
+  .list_item span {
+    font-size: 1.2rem; 
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .list_item img {
+    width: 90px
+  }
+  .list_item span {
+    font-size: 80%; 
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .list_app{
+    display: block;
+  }
+  .list_item{
+    display: block;
+    margin-bottom: 15px;
+  }
+  .list_item img {
+    display: block;
+    position: relative;
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .list_item span {
+    display: block;
+  }
+}
